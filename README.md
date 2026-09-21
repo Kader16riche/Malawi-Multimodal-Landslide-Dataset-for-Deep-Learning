@@ -12,7 +12,7 @@ The open dataset is organized into independent `train`, `val`, and `test` subset
 
 ### Dataset examples
 
-![Examples of the multimodal Malawi dataset](dataset_examples.png.png)
+![Examples of the multimodal Malawi dataset](./dataset_examples.png)
 
 The dataset contains the following layers:
 
