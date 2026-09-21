@@ -144,7 +144,7 @@ The RGB and NIR reconstruction uses the original per-band 2nd–98th percentile 
 
 ### 2. Model training
 
-`notebooks/Malawi_SegFormer_RGB_VVCOH_Training_v3_original_architecture.ipynb`
+`Malawi_SegFormer_RGB_VV_COH_Training.ipynb`
 
 The training notebook uses the `train` and `val` subsets separately. The independent test set is not accessed during model development.
 
@@ -169,7 +169,7 @@ The best model is selected using validation **Recall** and is saved for the inde
 
 ### 3. Independent test inference
 
-`notebooks/Malawi_SegFormer_RGB_VVCOH_Inference_v3_original_architecture.ipynb`
+`Malawi_SegFormer_RGB_VV_COH_Inference.ipynb`
 
 The inference notebook restores the trained dual-branch architecture and evaluates the independent `test` subset. No rotation augmentation or test-time augmentation is applied.
 
