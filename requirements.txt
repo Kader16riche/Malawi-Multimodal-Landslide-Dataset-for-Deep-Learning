@@ -1,0 +1,23 @@
+# Core scientific stack
+numpy
+pandas
+matplotlib
+Pillow
+tqdm
+opencv-python
+
+# Deep learning / Hugging Face
+torch
+transformers
+datasets
+evaluate
+accelerate
+huggingface-hub
+safetensors
+
+# Geospatial I/O and reprojection
+rasterio
+pyproj
+
+# PlanetScope reconstruction
+requests
