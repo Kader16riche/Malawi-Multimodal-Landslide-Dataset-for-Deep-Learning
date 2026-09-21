@@ -1,6 +1,6 @@
 # Malawi Multimodal Landslide Dataset and Geo-Auxiliary SegFormer
 
-This repository contains the reproducibility code associated with a multimodal Earth-observation framework for landslide mapping in Malawi following Cyclone Freddy. It provides utilities for reconstructing the PlanetScope-derived optical patches, training the RGB–VV-coherence dual-branch SegFormer model, and performing independent test inference.
+This repository contains the reproducibility code associated with a multimodal Earth-observation framework for landslide mapping in Malawi following Cyclone Freddy 2023. It provides utilities for reconstructing the PlanetScope-derived optical patches, training the RGB–VV-coherence dual-branch SegFormer model, and performing independent test inference.
 
 > **Repository status:** private during manuscript preparation/review. Citation and publication information will be added after acceptance/publication.
 
@@ -12,7 +12,7 @@ The open dataset is organized into independent `train`, `val`, and `test` subset
 
 ### Dataset examples
 
-![Examples of the multimodal Malawi dataset](figures/dataset_examples.png)
+![Examples of the multimodal Malawi dataset](dataset_examples.png.png)
 
 The dataset contains the following layers:
 
@@ -41,13 +41,13 @@ The dataset contains the following layers:
 
 The landslide-segmentation model is a dual-branch architecture built around a pretrained **SegFormer MiT-B2** RGB encoder. A residual CNN processes the geo-auxiliary input, and multi-scale gated fusion integrates the auxiliary features with the four SegFormer encoder stages. An auxiliary prior head provides additional training supervision.
 
-![Dual-branch SegFormer architecture](figures/model_architecture.png)
+![Dual-branch SegFormer architecture](Overview%20of%20the%20proposed%20architecture.png)
 
 ### Multi-Scale Geo-Auxiliary Gated Fusion Module
 
 At each encoder stage, the geo-auxiliary feature map is projected to the corresponding RGB feature dimension. The projected auxiliary features and RGB features are used to generate a spatial-channel gate, which controls the contribution of the auxiliary information before residual fusion with the RGB representation.
 
-![Multi-Scale Geo-Auxiliary Gated Fusion Module](figures/mgfm_module.png)
+![Multi-Scale Geo-Auxiliary Gated Fusion Module](MGFM_module.png)
 
 For the training configuration provided in this repository, the auxiliary branch receives:
 
