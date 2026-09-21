@@ -113,7 +113,7 @@ DL Malawi Dataset/
 
 ### 1. PlanetScope exact-patch reconstruction
 
-`notebooks/Malawi_PlanetScope_Exact_Patch_Rebuilder_v2.ipynb`
+`Malawi_PlanetScope_Exact_Patch_Rebuilder.ipynb`
 
 PlanetScope-derived **RGB, NIR, and NDVI are not redistributed directly** with the open dataset. The reconstruction notebook allows users with their own authorized Planet account and imagery access to rebuild the required optical patches.
 
@@ -126,6 +126,17 @@ For each manifest entry, the notebook:
 5. composites multiple verified source items when necessary;
 6. reprojects the delivered Surface Reflectance data to the exact dataset grid;
 7. reconstructs RGB, NIR, and NDVI GeoTIFFs.
+
+#### Required metadata
+
+The reconstruction workflow requires the accompanying `PlanetScope_post_source_per_patch.csv` file provided in this repository. Users should download both:
+
+- `Malawi_PlanetScope_Exact_Patch_Rebuilder.ipynb`
+- `PlanetScope_post_source_per_patch.csv`
+
+and save them locally. Before running the notebook, the path to `PlanetScope_post_source_per_patch.csv` must be specified in the notebook configuration cell.
+
+The CSV contains the patch-level metadata required by the reconstruction workflow. PlanetScope imagery itself is **not distributed through this repository** and must be accessed through the user's own authorized Planet account.
 
 The RGB and NIR reconstruction uses the original per-band 2nd–98th percentile normalization applied on valid pixels.
 
