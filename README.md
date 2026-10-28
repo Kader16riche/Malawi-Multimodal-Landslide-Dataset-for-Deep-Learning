@@ -2,7 +2,7 @@
 
 This repository contains the reproducibility code associated with a multimodal Earth-observation framework for landslide mapping in Malawi following Cyclone Freddy 2023. It provides utilities for reconstructing the PlanetScope-derived optical patches, training the RGB–VV-coherence dual-branch SegFormer model, and performing independent test inference.
 
-> **Repository status:** private during manuscript preparation/review. Citation and publication information will be added after acceptance/publication.
+> **Repository status:** The Malawi multimodal landslide dataset is publicly available on Zenodo: https://doi.org/10.5281/zenodo.22877238. The associated manuscript has been accepted for publication, and its DOI will be added once available.
 
 ## Overview
 
@@ -222,9 +222,23 @@ Open the PlanetScope reconstruction notebook and set the manifest path and recon
 
 ## Data availability
 
-The redistributable dataset layers will be deposited in a public scientific data repository after completion of the publication process. The permanent dataset DOI and download link will be added here.
+The Malawi Multimodal Earth Observation Dataset for Landslide Mapping Following Cyclone Freddy 2023 is publicly available on Zenodo.
 
-PlanetScope-derived RGB, NIR, and NDVI data are excluded from direct redistribution. Authorized users can reconstruct these layers with the supplied notebook and metadata manifest using their own Planet account.
+Dataset DOI: https://doi.org/10.5281/zenodo.22877238
+
+Zenodo repository: https://zenodo.org/records/22877238
+
+The dataset is distributed in three archives corresponding to the training, validation, and independent test subsets:
+
+Malawi_Multimodal_Landslide_train.rar — 1,536 patches
+
+Malawi_Multimodal_Landslide_val.rar — 171 patches
+
+Malawi_Multimodal_Landslide_test.rar — 382 patches
+
+The archives contain the redistributable Sentinel-1 SAR, SAR-coherence, topographic, hydrological, and landslide ground-truth layers.
+
+PlanetScope-derived RGB, NIR, and NDVI imagery is not redistributed due to Planet licensing restrictions. Authorized users can reconstruct these optical layers using the Malawi_PlanetScope_Exact_Patch_Rebuilder.ipynb notebook and the accompanying PlanetScope_post_source_per_patch.csv metadata file provided in this GitHub repository, using their own authorized Planet account and imagery access.
 
 **Dataset DOI:** *to be added*
 
@@ -238,9 +252,16 @@ Citation information will be added after publication.
 
 ## License
 
-The software license and dataset license will be specified before the public release. PlanetScope imagery and derived products remain subject to the applicable Planet terms and user access permissions.
+The dataset distributed through Zenodo is released under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
+
+Dataset license: https://creativecommons.org/licenses/by/4.0/
+
+PlanetScope imagery is not redistributed. Access to and use of PlanetScope imagery remain subject to Planet's applicable licensing terms and the user's authorized access permissions.
+
+The dataset license does not automatically establish a license for the source code in this GitHub repository. Software licensing information will be provided separately.
 
 ## Contact
 
 **Abdelkader Riche**  
+abdelkader.riche@unifi.it
 University of Florence (UNIFI)
