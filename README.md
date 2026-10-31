@@ -244,11 +244,9 @@ PlanetScope-derived RGB, NIR, and NDVI imagery is not redistributed due to Plane
 
 ## Citation
 
-If you use this dataset or code, please cite the associated paper and dataset record.
+If you use this dataset or the associated code in your research, please cite the published article:
 
-```text
-Citation information will be added after publication.
-```
+Published article: https://doi.org/10.3390/rs18213722 
 
 ## License
 
